@@ -3,13 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Untitled Document</title>
+  <title>Creating a Video Loop</title>
 </head>
 
 <body>
+  <video id="myPlayerID"
+	  data-video-id="5045678907001"
+		data-account="1752604059001"
+		data-player="ByZN9ymFZ"
+		data-embed="default"
+		data-application-id
+		class="video-js"
+		controls
+		width="640"
+		height="360"></video>
+	<script src="//players.brightcove.net/1752604059001/ByZN9ymFZ_default/index.min.js"></script>
 
-
+  <script type="text/javascript" src="video-loop.js"></script>
+  <script>videojs('myPlayerID').videoLoop();</script>
 
 </body>
-
 </html>
